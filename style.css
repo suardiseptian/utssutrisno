@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: radial-gradient(circle at top,#0a0f1f,#05070f,#000);
+    color:white;
+    padding:30px;
+    overflow-x:hidden;
+}
+
+/* Glow background */
+body::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#00ffcc;
+    filter:blur(120px);
+    opacity:0.15;
+    top:-150px;
+    left:-150px;
+}
+
+body::after{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#7c3aed;
+    filter:blur(120px);
+    opacity:0.15;
+    bottom:-150px;
+    right:-150px;
+}
+
+/* Container */
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 25px rgba(0,255,204,0.1);
+}
+
+/* Judul */
+h1{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+    color:#00ffcc;
+    text-shadow:0 0 15px #00ffcc;
+}
+
+/* Input form layout */
+table{
+    width:100%;
+}
+
+td{
+    padding:10px;
+}
+
+/* Input */
+input, select{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(0,0,0,0.4);
+    color:#00ffcc;
+    border:1px solid rgba(0,255,204,0.2);
+    transition:0.3s;
+}
+
+input:focus, select:focus{
+    border:1px solid #00ffcc;
+    box-shadow:0 0 10px #00ffcc;
+}
+
+/* Radio */
+.radio{
+    display:flex;
+    gap:20px;
+    color:#cbd5e1;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#00ffcc,#3b82f6);
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px #00ffcc;
+}
+
+/* Hasil */
+.hasil{
+    margin-top:30px;
+}
+
+/* Tabel hasil */
+.hasil table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.hasil th{
+    background:#00ffcc;
+    color:black;
+    padding:12px;
+    text-transform:uppercase;
+}
+
+.hasil td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.hasil tr:hover{
+    background:rgba(0,255,204,0.1);
+}
+
+/* Status */
+.lulus{
+    color:#00ff88;
+    font-weight:bold;
+    text-shadow:0 0 8px #00ff88;
+}
+
+.cadangan{
+    color:#facc15;
+    font-weight:bold;
+    text-shadow:0 0 8px #facc15;
+}
+
+.gagal{
+    color:#ff4d6d;
+    font-weight:bold;
+    text-shadow:0 0 8px #ff4d6d;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    body{padding:15px;}
+    h1{font-size:24px;}
+}

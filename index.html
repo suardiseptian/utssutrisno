@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran Mahasiswa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+
+    <form id="formPendaftaran">
+
+        <table>
+
+            <tr>
+                <td>Kode Pendaftaran</td>
+                <td>
+                    <input type="text" id="kode">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nama Pendaftar</td>
+                <td>
+                    <input type="text" id="nama">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td class="radio">
+
+                    <label>
+                        <input type="radio" name="jk" value="Laki-laki">
+                        Laki-laki
+                    </label>
+
+                    <label>
+                        <input type="radio" name="jk" value="Perempuan">
+                        Perempuan
+                    </label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" id="ttl">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pekerjaan Orang Tua</td>
+                <td>
+                    <select id="ortu">
+                        <option value="">-- Pilih --</option>
+                        <option>PNS</option>
+                        <option>Wiraswasta</option>
+                        <option>Petani</option>
+                        <option>Buruh</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tempat Tes</td>
+                <td>
+                    <select id="tempat">
+                        <option>Gedung A</option>
+                        <option>Gedung B</option>
+                        <option>Viktor</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nilai Matematika</td>
+                <td>
+                    <input type="number" id="mat">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nilai Inggris</td>
+                <td>
+                    <input type="number" id="ing">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nilai Umum</td>
+                <td>
+                    <input type="number" id="umum">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">
+                        SIMPAN DATA
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <div id="hasil"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
